@@ -33,7 +33,7 @@ function App() {
       contenHashInput.match(/\/(ipns)\/(.*)/);
 
     if (matched && matched.length > 0) {
-      const contentType = matched[1];
+      // const contentType = matched[1];
       const content = matched[2];
       /* @ts-ignore */
       const bs58content = bs58.encode(
