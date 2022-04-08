@@ -1,1 +1,74 @@
+.App {
+  width: 40vw;
+  min-width: 600px;
+  margin: 0 auto;
+}
 
+section {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 30px;
+  margin-top: 50px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 1em;
+}
+p {
+  margin: 0;
+}
+input {
+  display: block;
+  width: 100%;
+  background: #722d6f;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  box-sizing: border-box;
+  border-radius: 9px;
+  color: white;
+  padding: 10px 5px;
+}
+
+label {
+  font-style: italic;
+  font-size: 0.8em;
+  margin-bottom: 0.5em;
+  display: block;
+}
+
+button {
+  border: 2px solid white;
+  display: block;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.15);
+  padding: 12px 20px;
+  font-size: 1rem;
+  color: white;
+  font-style: italic;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: rgba(250, 235, 215, 0.2);
+}
+
+.result {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.result p {
+  font-family: monospace;
+  overflow-x: scroll;
+}
+
+.result:hover {
+  background-color: rgba(250, 235, 215, 0.2);
+}
+
+h2 {
+  margin: 0;
+}
