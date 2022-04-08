@@ -2,10 +2,12 @@ import React, {useState} from 'react';
 import {Buffer} from 'buffer';
 import './App.css';
 import bs58 from './bs58.bundle'
+import { keccak256 } from 'js-sha3';
+import {CopyToClipboard} from 'react-copy-to-clipboard';
 
 const namehash = require('eth-ens-namehash');
 
-
+window.Buffer = Buffer;
 function App() {
   const [namehashInput, setNamehashInput] = useState('')
   const [namehashResult, setNamehash] = useState('')
@@ -21,7 +23,7 @@ function App() {
   }
 
   const genKeccak = () => {
-
+    setKeccak('0x' + keccak256(keccakInput))
   }
 
   const genContentHash = () => {
@@ -58,7 +60,9 @@ function App() {
         <button onClick={genNamehash}>Generate Namehash</button>
         {namehashResult &&
           <div className='result'>
-            {namehashResult}
+            <CopyToClipboard text={namehashResult}>
+            <p>{namehashResult}</p>
+            </CopyToClipboard>
           </div>
         }
       </section>
@@ -70,7 +74,9 @@ function App() {
         <button onClick={genKeccak}>Generate Keccak256</button>
         {keccak &&
           <div className='result'>
-            {keccak}
+            <CopyToClipboard text={keccak}>
+            <p>{keccak}</p>
+            </CopyToClipboard>
           </div>
         }
       </section>
@@ -82,7 +88,9 @@ function App() {
         <button onClick={genContentHash}>Generate Content Hash</button>
         {contentHashResult &&
           <div className='result'>
-            {contentHashResult}
+            <CopyToClipboard text={contentHashResult}>
+            <p>{contentHashResult}</p>
+            </CopyToClipboard>
           </div>
         }
       </section>
