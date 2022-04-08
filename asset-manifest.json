@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/static/css/main.0f341bac.css",
-    "main.js": "/static/js/main.d629a2f7.js",
-    "static/js/787.60e8d37d.chunk.js": "/static/js/787.60e8d37d.chunk.js",
-    "index.html": "/index.html",
-    "main.0f341bac.css.map": "/static/css/main.0f341bac.css.map",
-    "main.d629a2f7.js.map": "/static/js/main.d629a2f7.js.map",
-    "787.60e8d37d.chunk.js.map": "/static/js/787.60e8d37d.chunk.js.map"
+    "main.css": "/ENS-Contract-Toolbelt/static/css/main.0f341bac.css",
+    "main.js": "/ENS-Contract-Toolbelt/static/js/main.631f4eb7.js",
+    "static/js/787.60e8d37d.chunk.js": "/ENS-Contract-Toolbelt/static/js/787.60e8d37d.chunk.js",
+    "index.html": "/ENS-Contract-Toolbelt/index.html",
+    "main.0f341bac.css.map": "/ENS-Contract-Toolbelt/static/css/main.0f341bac.css.map",
+    "main.631f4eb7.js.map": "/ENS-Contract-Toolbelt/static/js/main.631f4eb7.js.map",
+    "787.60e8d37d.chunk.js.map": "/ENS-Contract-Toolbelt/static/js/787.60e8d37d.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.0f341bac.css",
-    "static/js/main.d629a2f7.js"
+    "static/js/main.631f4eb7.js"
   ]
 }
